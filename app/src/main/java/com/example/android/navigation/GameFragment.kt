@@ -49,8 +49,8 @@ class GameFragment : Fragment() {
                     answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
             Question(text = "What color is the Android Mascot?",
                     answers = listOf("Green", "Red", "Blue", "Yellow")),
-            Question(text = "Which one of these is an Android navigation component?",
-                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
+            Question(text = "Which one is a ViewGroup?",
+                    answers = listOf("ConstrintLayout", "Button", "TextView", "activity_main")),
             Question(text = "Which XML element lets you register an activity with the launcher activity?",
                     answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
             Question(text = "What do you use to mark a layout for data binding?",
@@ -62,7 +62,7 @@ class GameFragment : Fragment() {
     lateinit var currentQuestion: Question
     lateinit var answers: MutableList<String>
     private var questionIndex = 0
-    private val numQuestions = Math.min((questions.size + 1) / 2, 3)
+    private val numQuestions = Math.min((questions.size + 1) / 2, 6)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
