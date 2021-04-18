@@ -20,8 +20,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.GONE
-import android.view.View.VISIBLE
+import android.view.View.*
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
@@ -34,8 +33,9 @@ class RulesFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentRulesBinding>(inflater, R.layout.fragment_rules, container, false)
         binding.textView2.setOnClickListener {
             binding.textView3.visibility = VISIBLE
-            binding.rulesText.visibility = GONE
+            binding.rulesText.visibility = INVISIBLE
         }
+        binding.playGame.setOnClickListener { view : View -> view.findNavController().navigate(R.id.action_rulesFragment_to_gameFragment) }
         return binding.root
     }
 }

@@ -37,7 +37,7 @@
             android:background="@drawable/magenta_rounded_corners"
             android:paddingStart="@dimen/button_padding"
             android:paddingEnd="@dimen/button_padding"
-            android:text="Play"
+            android:text="@string/play"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/button_text_size"
