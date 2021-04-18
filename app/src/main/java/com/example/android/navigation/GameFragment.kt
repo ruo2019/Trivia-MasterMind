@@ -50,7 +50,7 @@ class GameFragment : Fragment() {
             Question(text = "What color is the Android Mascot?",
                     answers = listOf("Green", "Red", "Blue", "Yellow")),
             Question(text = "Which one is a ViewGroup?",
-                    answers = listOf("ConstrintLayout", "Button", "TextView", "activity_main")),
+                    answers = listOf("ConstraintLayout", "Button", "TextView", "activity_main")),
             Question(text = "When was Steve Jobs forced out of Apple?",
                     answers = listOf("1985", "1895", "1975", "1990")),
             Question(text = "Who forced Steve Jobs out of Apple?",

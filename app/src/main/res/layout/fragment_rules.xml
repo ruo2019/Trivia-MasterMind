@@ -13,17 +13,18 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:context="com.example.android.navigation.RulesFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="com.example.android.navigation.RulesFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -38,17 +39,44 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/trivia_rules" />
 
-        <TextView
-            android:id="@+id/rulesText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/horizontal_margin"
-            android:layout_marginTop="@dimen/vertical_margin"
-            android:layout_marginEnd="@dimen/horizontal_margin"
-            android:text="@string/rules_text"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rulesImage" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/rulesText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/horizontal_margin"
+                android:text="@string/rules_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rulesImage" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="282dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/rulesText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/rulesText"
+                app:layout_constraintVertical_bias="0.358" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/secret_text"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/rulesText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
