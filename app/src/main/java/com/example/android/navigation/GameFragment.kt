@@ -51,10 +51,10 @@ class GameFragment : Fragment() {
                     answers = listOf("Green", "Red", "Blue", "Yellow")),
             Question(text = "Which one is a ViewGroup?",
                     answers = listOf("ConstrintLayout", "Button", "TextView", "activity_main")),
-            Question(text = "Which XML element lets you register an activity with the launcher activity?",
-                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
-            Question(text = "What do you use to mark a layout for data binding?",
-                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+            Question(text = "When was Steve Jobs forced out of Apple?",
+                    answers = listOf("1985", "1895", "1975", "1990")),
+            Question(text = "Who forced Steve Jobs out of Apple?",
+                    answers = listOf("John Sculley", "Steve Wozniak", "Steve Jobs", "Bill Gates"))
     )
 
 
