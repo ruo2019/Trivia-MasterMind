@@ -23,4 +23,20 @@
     <color name="youWinBackground">#00baff</color>
     <color name="gameOverBackground">#f8bbd0</color>
     <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="dark_red">#dd0000</color>
+    <color name="orange">#ff6700</color>
+    <color name="dark_orange">#dd4500</color>
+    <color name="yellow">#ffde00</color>
+    <color name="dark_yellow">#ddbc00</color>
+    <color name="green">#00dd00</color>
+    <color name="dark_green">#00bb00</color>
+    <color name="blue">#00baff</color>
+    <color name="dark_blue">#00a0dd</color>
+    <color name="purple">#bb00ff</color>
+    <color name="dark_purple">#aa00bb</color>
+    <color name="magenta">#ff00ff</color>
+    <color name="dark_magenta">#dd00dd</color>
+    <color name="pink">#ffaaff</color>
+    <color name="dark_pink">#ddaadd</color>
 </resources>
