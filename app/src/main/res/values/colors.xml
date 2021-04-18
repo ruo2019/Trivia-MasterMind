@@ -22,4 +22,5 @@
     <color name="youWinDark">#FF6700</color>
     <color name="youWinBackground">#00baff</color>
     <color name="gameOverBackground">#f8bbd0</color>
+    <color name="white">#ffffff</color>
 </resources>
