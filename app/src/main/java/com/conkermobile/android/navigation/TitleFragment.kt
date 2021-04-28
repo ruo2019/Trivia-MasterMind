@@ -1,4 +1,4 @@
-package com.example.android.navigation
+package com.conkermobile.android.navigation
 
 import android.content.Context
 import android.os.Bundle
@@ -8,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.android.navigation.databinding.FragmentTitleBinding
+import com.conkermobile.android.navigation.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
 

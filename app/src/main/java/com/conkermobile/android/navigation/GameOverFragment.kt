@@ -14,28 +14,24 @@
  * limitations under the License.
  */
 
-package com.example.android.navigation
+package com.conkermobile.android.navigation
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.*
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.android.navigation.databinding.FragmentRulesBinding
-import com.example.android.navigation.databinding.FragmentTitleBinding
+import com.conkermobile.android.navigation.databinding.FragmentGameOverBinding
 
-class RulesFragment : Fragment() {
+class GameOverFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val binding = DataBindingUtil.inflate<FragmentRulesBinding>(inflater, R.layout.fragment_rules, container, false)
-        binding.textView2.setOnClickListener {
-            binding.textView3.visibility = VISIBLE
-            binding.rulesText.visibility = INVISIBLE
-        }
-        binding.playGame.setOnClickListener { view : View -> view.findNavController().navigate(R.id.action_rulesFragment_to_gameFragment) }
+        // Inflate the layout for this fragment
+        val binding: FragmentGameOverBinding = DataBindingUtil.inflate(
+                inflater, R.layout.fragment_game_over, container, false)
+        binding.tryAgainButton.setOnClickListener { view: View -> view.findNavController().navigate(GameOverFragmentDirections.actionGameOverFragmentToGameFragment()) }
         return binding.root
     }
 }
